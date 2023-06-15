@@ -1,0 +1,20 @@
+{
+  "name": "bitrix-cache-fix",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "deploy": "wrangler publish",
+    "start": "wrangler dev"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20230419.0",
+    "@types/cookie": "^0.5.1",
+    "itty-router": "^3.0.12",
+    "typescript": "^5.0.4",
+    "wrangler": "^3.0.0"
+  },
+  "dependencies": {
+    "cf-strip-utm": "^1.0.0",
+    "cookie": "^0.5.0"
+  }
+}
