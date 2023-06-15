@@ -14,6 +14,7 @@
     "wrangler": "^3.0.0"
   },
   "dependencies": {
+    "add-param-from-cookie-cf": "^1.0.0",
     "cf-strip-utm": "^1.0.0",
     "cookie": "^0.5.0"
   }

@@ -1,6 +1,7 @@
 import { stripUtmFromRequest } from "cf-strip-utm"
-import { addParamFromCookie } from "./add-params-from-cookie"
+import { addParamFromCookie } from "add-param-from-cookie-cf"
 
+const bitrixCityCookieName = "BITRIX_SM_ARG_CITY";
 
 addEventListener('fetch', event => {
 	event.passThroughOnException()
@@ -10,7 +11,7 @@ addEventListener('fetch', event => {
 async function handleRequest(request: Request) {
 	let modifiedRequest = await stripUtmFromRequest(request)
 
-	modifiedRequest = await addParamFromCookie(modifiedRequest)
+	modifiedRequest = await addParamFromCookie(modifiedRequest, bitrixCityCookieName)
 
 	const response = await fetch(modifiedRequest)
 
