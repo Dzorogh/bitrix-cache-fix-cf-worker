@@ -11,7 +11,7 @@
     "@types/cookie": "^0.5.1",
     "itty-router": "^3.0.12",
     "typescript": "^5.0.4",
-    "wrangler": "^3.0.0"
+    "wrangler": "^3.1.1"
   },
   "dependencies": {
     "add-param-from-cookie-cf": "^1.0.0",
