@@ -11,7 +11,7 @@ addEventListener('fetch', event => {
 async function handleRequest(request: Request) {
 	let modifiedRequest = await stripUtmFromRequest(request)
 
-	modifiedRequest = await addParamFromCookie(modifiedRequest, bitrixCityCookieName)
+	modifiedRequest = await addParamFromCookie(modifiedRequest, bitrixCityCookieName, '1')
 
 	const response = await fetch(modifiedRequest)
 
